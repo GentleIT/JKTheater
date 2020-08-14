@@ -187,18 +187,18 @@ li {
 .nav__phonenumber::after {
     content: '';
     display: block;
-    width: 0%;
     height: 2px;
     background-color: #D1A954;
     position: absolute;
     animation: nav_phonenumber 1s ease-in-out;
+    animation-fill-mode: forwards;
     animation-delay: 3.5s;
 }
 @keyframes nav_phonenumber {
-    from {
+    0% {
         width: 10%
     }
-    to {
+    100% {
         width: 100%;
     }
 }
